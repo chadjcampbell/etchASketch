@@ -10,7 +10,14 @@
 <body>
     <div id="container">
         <div id="controls">
-
+            <label for="colorpicker">Color Picker:</label>
+            <input type="color" id="colorpicker" value="#0000ff">
+            <div class="slidecontainer">
+                <p>Size:</p>
+                <input type="range" min="1" max="50" value="25" class="slider" id="myRange">
+                <div id="size"></div>
+            </div>
+            <button id="reset">Reset pad</button>
         </div>
         <div id="grid">
 
