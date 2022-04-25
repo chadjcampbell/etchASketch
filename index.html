@@ -8,21 +8,29 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
+    <h1>Etch-a-Sketch</h1>
     <div id="container">
         <div id="controls">
-            <label for="colorpicker">Color Picker:</label>
-            <input type="color" id="colorpicker" value="#0000ff">
+            <div id="colorbutton">
+                <label for="colorpicker">Color Picker:</label>
+                <input type="color" id="colorpicker" value="#0000ff">
+            </div>
             <div class="slidecontainer">
                 <p>Size:</p>
                 <input type="range" min="1" max="50" value="25" class="slider" id="myRange">
                 <div id="size"></div>
             </div>
-            <button id="reset">Reset pad</button>
+            <button class="btns" id="lines">Toggle Grid Lines</button>
+            <button class="btns" id="reset">Reset pad</button>
         </div>
         <div id="grid">
 
         </div>
     </div>
+    <footer>
+        Made by Chad J Campbell - 
+        You can check out my <a href="https://github.com/chadjcampbell">GitHub Here</a>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>

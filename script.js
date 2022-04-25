@@ -40,8 +40,8 @@ reset.addEventListener('click', () => {
     });
 });
 
-var slider = document.getElementById("myRange");
-var size = document.getElementById("size");
+let slider = document.getElementById("myRange");
+let size = document.getElementById("size");
 size.innerHTML = slider.value;
 
 slider.oninput = function() {
@@ -53,3 +53,11 @@ function removeAllChildNodes(parent) {
         parent.removeChild(parent.firstChild);
     };
 };
+
+let lines = document.querySelector('#lines')
+lines.addEventListener('click', () => {
+    let cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => {
+        cell.classList.toggle('lines');
+    });
+});
